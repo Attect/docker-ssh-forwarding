@@ -6,14 +6,19 @@
 ## 凭证
 使用密钥登录，请提前将运行的用户的凭证放到远程服务器上(ssh-copy-id)
 
+## 构建
+```
+docker build . -t sshforwarding
+```
+
 ## docker-compose.yml
 
 ```
 version: "3"
 services:
-        sshtunnel:
-                image: sshtunnel
-                container_name: sshtunnel
+        sshforwarding:
+                image: sshforwarding
+                container_name: sshforwarding
                 ports:
                         - "0.0.0.0:3307:3307"
                 volumes:
