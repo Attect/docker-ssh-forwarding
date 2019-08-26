@@ -1,4 +1,4 @@
-# docker-ssh-docker-forwarding
+# docker-ssh-forwarding
 在Docker中使用SSH将远程服务器内部端口转发到本地内部网络
 
 适合将生产环境中为了安全而不开放外部访问的端口，通过SSH安全转发功能，映射到内部网络指定主机和端口上。
